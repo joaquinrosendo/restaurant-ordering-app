@@ -1,12 +1,40 @@
-body {
+html, body {
     margin: 0;
-} 
+    padding: 0;
+    font-family: 'Smythe', cursive;
+}
+
 
 /* Typography and Icons */
+header{
+    color: white;
+}
 
+h1 {
+    font-weight: 100;
+    line-height: 24px;
+    font-size: 39px;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 14px;
+}
 
 /* Layout */
+main, header{
+    width: 600px;
+    margin: 0 auto;
+}
 
+
+header {
+    background-image: url('images/burger-banner.png');
+    background-size: cover;
+    background-position: center;
+    padding: 45px;
+}
 
 /* Textarea + Buttons */
 
