@@ -4,7 +4,6 @@ html, body {
     font-family: 'Smythe', cursive;
 }
 
-
 /* Typography and Icons */
 header{
     color: white;
@@ -22,6 +21,25 @@ h2 {
     line-height: 14px;
 }
 
+.item-emoji {
+    font-size: 80px;
+}
+
+.add-item-btn {
+    border: solid 1.5px #DEDEDE;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.add-item-btn p {
+    font-family: 'Inter';
+    font-size: 32px;
+    margin: 0;
+}
+
 /* Layout */
 main, header{
     width: 600px;
@@ -34,6 +52,25 @@ header {
     background-size: cover;
     background-position: center;
     padding: 45px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-info-container {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.item-emoji {
+    margin-top: 50px;
 }
 
 /* Textarea + Buttons */
