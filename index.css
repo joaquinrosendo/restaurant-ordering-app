@@ -25,6 +25,19 @@ h2 {
     font-size: 80px;
 }
 
+.item-name {
+    font-size: 28px;
+}
+
+.item-ingredients {
+    color: #8B8B8B;
+    font-size: 16px;
+}
+
+.item-price {
+    font-size: 20px;
+}
+
 .add-item-btn {
     border: solid 1.5px #DEDEDE;
     border-radius: 50%;
@@ -60,6 +73,7 @@ header {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
+    border-bottom: solid #D2D2D2 1.5px;
 }
 
 .item-info-container {
