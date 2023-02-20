@@ -22,11 +22,12 @@ h2 {
 }
 
 .item-emoji {
+    font-family: 'Inter';
     font-size: 80px;
     margin-bottom: 50px;
 }
 
-.item-name {
+.item-name, .order-item-name, .order-title {
     font-size: 28px;
     margin-bottom: 0;
 }
@@ -38,9 +39,10 @@ h2 {
     margin-bottom: 10px;
 }
 
-.item-price {
+.order-item-price {
     font-size: 20px;
-    margin-top: 0;
+    margin-top: 30px;
+    margin-bottom: 0;
 }
 
 .add-item-btn {
@@ -58,12 +60,41 @@ h2 {
     margin: 0;
 }
 
+.order-title {
+    text-align: center;
+}
+
+.order-item-remove-btn {
+    font-family: 'Verdana';
+    font-size: 12px;
+    font-weight: 400;
+    color: #BBBBBB;
+}
+
+.order-total-label {
+    font-size: 28px;
+}
+
+.order-total {
+    font-size: 20px;
+}
+
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
 /* Layout */
 main, header{
     width: 600px;
     margin: 0 auto;
 }
 
+main {
+    margin-bottom: 3em;
+}
 
 header {
     background-image: url('images/burger-banner.png');
@@ -92,6 +123,58 @@ header {
     margin-top: 50px;
 }
 
+.order-item-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1em;
+}
+
+.order-total-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid #393333 2px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.order-item-remove-btn {
+    margin-bottom: 8px;
+}
+
+.order-item-remove-btn:hover {
+    color: #8c2020;
+    cursor: pointer;
+}
+
+button {
+    background-color: #16DB99;
+    border: none;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #208c68;
+    cursor: pointer;
+}
+
 /* Textarea + Buttons */
+.add-item-btn:hover {
+    background-color: #8B8B8B;
+    cursor: pointer;
+}
 
-
+.add-item-btn p:hover {
+    color: white;
+}

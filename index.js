@@ -6,7 +6,6 @@ let renderMenu = (menuArray) => {
     let htmlMenu = ``;
 
     menuArray.map(menuItem => {
-        console.log(menuItem);
 
         htmlMenu += `<div class="menu-item">
                         <div class="item-info-container">
@@ -26,6 +25,10 @@ let renderMenu = (menuArray) => {
     })
 
     document.getElementById("menu-container").innerHTML = htmlMenu;
+}
+
+let renderOrderSummary = () => {
+    
 }
 
 renderMenu(menuArray);

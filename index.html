@@ -12,26 +12,28 @@
             <h1>Jimmy's Diner</h1>
             <h2>The best burgers and pizza in town</h2>
         </header>
-        <main id="menu-container">
-            <!-- Food items list goes here -->
-
-            <!--
-            <div class="menu-item">
-                <div class="item-info-container">
-                    <p class="item-emoji">🌮</p>
-                    <article class="item-description">
-                        <p class="item-name">Pizza</p>
-                        <p class="item-ingredients">pepperoni,mushrom,mozarella</p>
-                        <p class="item-price">$14</p>
-                    </article>
-                </div>
-                <span>
-                    <div class="add-item-btn">
-                        <p>+</p>
+        <main>
+            <section id="menu-container">
+                <!-- Food items list goes here -->
+            </section>
+            <section id="order-container">
+                <!-- 'Your order' box goes here -->
+                <h2 class="order-title">Your Order</h2>
+                <div class="order-list">
+                    <div class="order-item-container">
+                        <div class="order-item">
+                            <p class="order-item-name">Pizza</p>
+                            <p class="order-item-remove-btn">remove</p>
+                        </div>
+                        <p class="order-item-price">$14</p>
                     </div>
-                </span>
-            </div>
-            -->
+                </div>
+                <div class="order-total-container">
+                    <p class="order-total-label">Total price:</p>
+                    <p class="order-total">$26</p>
+                </div>
+                <button>Complete order</button>
+            </section>
         </main>
 	<script src="index.js" type="module"></script>
     </body>
