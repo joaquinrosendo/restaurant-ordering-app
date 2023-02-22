@@ -39,7 +39,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-.order-item-price {
+.item-price, .order-item-price {
     font-size: 20px;
     margin-top: 30px;
     margin-bottom: 0;
@@ -137,7 +137,7 @@ header {
     gap: 1em;
 }
 
-.order-total-container {
+#order-total-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
