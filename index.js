@@ -39,7 +39,7 @@ let deleteFoodItem = (menuItemId) => {
             orderSummaryData[i].quantity -= 1;
         }
     }
-    
+
     console.log(orderSummaryData);
     renderOrderSummary();
 }
@@ -72,17 +72,22 @@ let renderOrderSummary = () => {
 
     document.getElementById('order-list').innerHTML = orderSummaryHtml;
 
-    if (orderSummaryData.length === 0){
-        document.getElementById('order-total-container').innerHTML = '';
+    orderTotal = 0;
+
+    for(let i=0; i<orderSummaryData.length; i++){
+        orderTotal += orderSummaryData[i].price * orderSummaryData[i].quantity;
+    }
+
+    if (orderTotal === 0){
+        document.getElementById('order-container').style.display = "none";
+
     }
     else {
-        orderTotal = 0;
-        for(let i=0; i<orderSummaryData.length; i++){
-            orderTotal += orderSummaryData[i].price * orderSummaryData[i].quantity;
-        }
+        document.getElementById('order-container').style.display = "block"
         document.getElementById('order-total-container').innerHTML = `<p class="order-total-label">Total price:</p>
                                     <p class="order-total">$${orderTotal}</p>`
     }
+
     orderSummaryHtml = ``;
 }
 
