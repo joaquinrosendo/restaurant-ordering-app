@@ -1,6 +1,7 @@
 import {menuArray} from './data.js';
 let orderSummaryData = [];
 let orderTotal = 0;
+let customerName = '';
 
 document.addEventListener('click', function(e){
 
@@ -9,6 +10,12 @@ document.addEventListener('click', function(e){
     }
     else if(e.target.dataset.removeItem){
         deleteFoodItem(e.target.dataset.removeItem);
+    }
+    else if (e.target.id === 'complete-order-btn'){
+        completeOrderBtnClick();
+    }
+    else if (e.target.id === 'pay-btn'){
+        payButtonClick();
     }
 })
 
@@ -45,11 +52,17 @@ let deleteFoodItem = (menuItemId) => {
 }
 
 let completeOrderBtnClick = () => {
-
+    document.getElementById('card-payment-modal').style.display = 'flex';
 }
 
 let payButtonClick = () => {
+    document.getElementById('card-payment-modal').style.display = 'none';
+    
+    customerName = document.getElementById('customer-name').value;
 
+    document.getElementById('order-container').innerHTML = `<div class='order-complete-message'>
+    <h2>Thanks, ${customerName}! Your order is on its way!</h2>
+    </div>`
 }
 
 let renderOrderSummary = () => {

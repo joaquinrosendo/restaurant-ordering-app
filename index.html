@@ -13,6 +13,17 @@
             <h2>The best burgers and pizza in town</h2>
         </header>
         <main>
+            <section id="card-payment-modal">
+                <div class="card-payment-container">
+                    <form class="card-payment-form">
+                        <h2>Enter card details</h2>
+                        <input id="customer-name" name="customer-name" type="text" placeholder="Enter your name">
+                        <input name="card-number" type="number" placeholder="Enter card number">
+                        <input name="card-cvv" type="number" placeholder="Enter CVV">
+                    </form>
+                    <button id="pay-btn">Pay</button>
+                </div>
+            </section>
             <section id="menu-container">
                 <!-- Food items list goes here -->
             </section>
@@ -24,18 +35,7 @@
                 <div id="order-total-container">
                     <!-- Order total info goes here -->
                 </div>
-                <button>Complete order</button>
-            </section>
-            <section id="card-payment-modal">
-                <div class="card-payment-container">
-                    <form class="card-payment-form">
-                        <h2>Enter card details</h2>
-                        <input type="text" placeholder="Enter your name">
-                        <input type="number" placeholder="Enter card number">
-                        <input type="number" placeholder="Enter CVV">
-                    </form>
-                    <button>Pay</button>
-                </div>
+                <button id="complete-order-btn">Complete order</button>
             </section>
         </main>
 	<script src="index.js" type="module"></script>
