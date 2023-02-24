@@ -86,6 +86,20 @@ button {
     font-size: 16px;
 }
 
+.card-payment-form h2 {
+    font-family: 'Verdana';
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
+input {
+    font-family: 'Verdana';
+    font-size: 20px;
+    font-weight: 400;
+    color: #757575;
+}
+
 /* Layout */
 main, header{
     width: 600px;
@@ -94,6 +108,7 @@ main, header{
 
 main {
     margin-bottom: 3em;
+    position: relative;
 }
 
 header {
@@ -167,6 +182,51 @@ button {
 button:hover {
     background-color: #208c68;
     cursor: pointer;
+}
+
+#card-payment-modal {
+    background-color: white;
+    display: none; /* Change to flex in JS*/
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+}
+
+.card-payment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 525px;
+    border-radius: 5px;
+    --webkit-box-shadow: 0 0 100px grey;
+    box-shadow: 0 0 100px grey;
+    padding: 25px;
+}
+
+.card-payment-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-payment-form h2 {
+    margin-bottom: 45px;
+    margin-top: 45px;
+}
+
+input {
+    width: 475px;
+    height: 70px;
+    margin-bottom: 40px;
+    padding-left: 25px;
+    border: solid #757575 2px;
+    border-radius: 5px;
+}
+
+.card-payment-container button {
+    width: 475px;
 }
 
 /* Textarea + Buttons */
